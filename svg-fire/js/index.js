@@ -21,7 +21,7 @@ var Flame = (function () {
     var colors = ['#F9ECA9', '#EFC900', '#D79700', '#D0BB48'];
     this.body = this.group.path().attr({
       fill: this.particle ? '#F9ECA9' : colors[Math.floor(Math.random() * colors.length)],
-      opacity: this.particle ? 1 : 0.8,
+      opacity: 1,
       stroke: 'none'
     });
     this.updateGuide();
